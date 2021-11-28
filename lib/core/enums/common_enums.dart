@@ -12,6 +12,12 @@ enum Status {
   error,
 }
 
+enum ExchangePointOption {
+  mobileCard,
+  transfer,
+  donate,
+}
+
 enum SuccessFlags {
   basicSuccess,
   login,

@@ -6,6 +6,10 @@ abstract class IAuthRepository {
   Future<LegalResponse> getLagalsDetail(Map<String, dynamic> legalPayload);
 }
 
+abstract class ICommonRepository {
+  // Todo: Add common request class signitures (interfaces) here.
+}
+
 abstract class IProfileRepository {
   // Todo: Add profile request class signitures (interfaces) here.
   Future<User> reloadProfile();

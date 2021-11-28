@@ -44,6 +44,22 @@ Map<String, dynamic> _$_$_UserToJson(_$_User instance) => <String, dynamic>{
   'default_client_id': instance.defaultClientId,
 };
 
+_$_Coupon _$_$_CouponFromJson(Map<String, dynamic> json) {
+  return _$_Coupon(
+    name: json['name'] as String?,
+    point: json['point'] as int?,
+    expireDate: json['expireDate'] == null
+        ? null
+        : DateTime.parse(json['expireDate'] as String),
+  );
+}
+
+Map<String, dynamic> _$_$_CouponToJson(_$_Coupon instance) => <String, dynamic>{
+  'name': instance.name,
+  'point': instance.point,
+  'expireDate': instance.expireDate?.toIso8601String(),
+};
+
 _$_EmergencyContact _$_$_EmergencyContactFromJson(Map<String, dynamic> json) {
   return _$_EmergencyContact(
     id: json['id'] as int?,

@@ -10,6 +10,13 @@ abstract class Routes {
   static const auth = '/auth';
   static const verify = '/verify';
 
+  // Promotions Routes
+  static const promotions = '/promotions';
+  static const exchangePoints = '/exchangePoints';
+  static const promoDetail = '/promoDetail';
+  static const coupons = '/coupons';
+  static const referFreind = '/referFreind';
+
   // Settings routes
   static const settings = '/settings';
   static const privacySettings = '/privacySettings';

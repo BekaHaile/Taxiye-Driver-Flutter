@@ -7,6 +7,11 @@ import 'package:taxiye_driver/ui/pages/introduction/language_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/splash_page.dart';
 import 'package:taxiye_driver/ui/pages/legals/legal_detail_page.dart';
 import 'package:taxiye_driver/ui/pages/legals/legals_page.dart';
+import 'package:taxiye_driver/ui/pages/promotion/coupons_page.dart';
+import 'package:taxiye_driver/ui/pages/promotion/exchange_points_page.dart';
+import 'package:taxiye_driver/ui/pages/promotion/promo_detail_page.dart';
+import 'package:taxiye_driver/ui/pages/promotion/promotions_page.dart';
+import 'package:taxiye_driver/ui/pages/promotion/refer_friend_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/privacy_setting_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/settings_page.dart';
 
@@ -29,7 +34,6 @@ abstract class AppPages {
       page: () => const IntroductionPage(),
     ),
 
-    // auth pages
     // Auth Pages
     GetPage(
       name: Routes.auth,
@@ -38,6 +42,28 @@ abstract class AppPages {
     GetPage(
       name: Routes.verify,
       page: () => const VerifyPage(),
+    ),
+
+    // Promotions pages
+    GetPage(
+      name: Routes.promotions,
+      page: () => const PromotionsPage(),
+    ),
+    GetPage(
+      name: Routes.exchangePoints,
+      page: () => const ExchangePointsPage(),
+    ),
+    GetPage(
+      name: Routes.promoDetail,
+      page: () => const PromoDetailPage(),
+    ),
+    GetPage(
+      name: Routes.coupons,
+      page: () => const CouponsPage(),
+    ),
+    GetPage(
+      name: Routes.referFreind,
+      page: () => const ReferFriendPage(),
     ),
 
     // Settings pages

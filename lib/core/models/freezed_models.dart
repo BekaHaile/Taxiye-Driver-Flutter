@@ -42,6 +42,17 @@ class User with _$User {
 }
 
 @freezed
+class Coupon with _$Coupon {
+  factory Coupon({
+    String? name,
+    int? point,
+    DateTime? expireDate,
+  }) = _Coupon;
+
+  factory Coupon.fromJson(Map<String, dynamic> json) => _$CouponFromJson(json);
+}
+
+@freezed
 abstract class EmergencyContact with _$EmergencyContact {
   factory EmergencyContact({
     int? id,
@@ -71,6 +82,7 @@ abstract class BasicResponse with _$BasicResponse {
   factory BasicResponse.fromJson(Map<String, dynamic> json) =>
       _$BasicResponseFromJson(json);
 }
+
 
 String _countryCodeConverter(dynamic val) {
   return val != null

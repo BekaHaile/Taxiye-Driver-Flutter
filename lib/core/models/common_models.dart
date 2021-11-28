@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxiye_driver/core/enums/common_enums.dart';
 
 class Language {
   const Language({
@@ -36,4 +37,16 @@ class Option {
   IconData leadingIcon;
   bool isActive;
   bool? toggleValue;
+}
+
+class ExchangePoint {
+  const ExchangePoint({
+    required this.text,
+    required this.icon,
+    required this.option,
+  });
+
+  final String text;
+  final IconData icon;
+  final ExchangePointOption option;
 }

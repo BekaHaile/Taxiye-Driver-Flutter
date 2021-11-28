@@ -83,4 +83,17 @@ class AppTheme {
       borderRadius: BorderRadius.circular(8.0),
     ),
   );
+
+  static final boxDecoration = BoxDecoration(
+    color: Colors.white,
+    borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+    boxShadow: [
+      BoxShadow(
+        color: AppTheme.shadowColor.withOpacity(0.1),
+        spreadRadius: 0,
+        blurRadius: 20,
+        offset: const Offset(1, 0),
+      ),
+    ],
+  );
 }
