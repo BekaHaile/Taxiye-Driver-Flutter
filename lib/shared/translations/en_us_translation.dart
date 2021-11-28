@@ -34,4 +34,15 @@ final Map<String, String> enUs = {
   // error messages
   'error_phone': 'Please enter phone number',
   'invalid_phone': 'Please enter valid phone number',
+
+  'legals': 'Legals',
+  'legals_info': 'Important info to read',
+  'speak_real_person': 'Speak to a real person.',
+  'speak_person_info': 'Just to talk or book a cab.',
+
+  'view_terms_conditions': 'View app usage terms & conditions',
+  'privacy_policy': 'Privacy Policy',
+  'privacy_info': 'See how we use your data',
+  'about_us': 'About Us',
+  'know_us': 'Know us a little better',
 };

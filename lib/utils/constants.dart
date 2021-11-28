@@ -1,5 +1,7 @@
 import 'package:taxiye_driver/core/models/common_models.dart';
 
+const kBaseUrl = 'https://staging.taxiye.com:8008';
+
 const kPagePadding = 20.0;
 
 const List<Language> kLanguages = [
@@ -16,3 +18,8 @@ const List<Country> kCountries = [
   Country(name: 'USA', code: '+1', isoCode: 'US'),
   Country(name: 'Sudan', code: '+249', isoCode: 'SD')
 ];
+
+// TODO: change this tokens with driver's equivalent
+const kOperatorToken = '8fa23305501d87e9b87ecac6a87d381b';
+const kClientId = 'EEBUOvQq7RRJBxJm';
+const kAuthKeyPart = 'nEkVmQh2771MvzGAsKxUUbISgHuCz1zZWfKFywMXCCUt7';

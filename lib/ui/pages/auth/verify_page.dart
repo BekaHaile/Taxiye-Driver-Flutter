@@ -15,8 +15,6 @@ class VerifyPage extends GetView<AuthController> {
 
   @override
   Widget build(BuildContext context) {
-    Get.put(AuthController());
-
     final _pinPutFocusNode = FocusNode();
     _pinPutFocusNode.requestFocus();
     controller.startTimer();

@@ -5,6 +5,9 @@ import 'package:taxiye_driver/ui/pages/auth/verify_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/introduction_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/language_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/splash_page.dart';
+import 'package:taxiye_driver/ui/pages/legals/legal_detail_page.dart';
+import 'package:taxiye_driver/ui/pages/legals/legals_page.dart';
+
 part 'app_routes.dart';
 
 abstract class AppPages {
@@ -34,6 +37,16 @@ abstract class AppPages {
       name: Routes.verify,
       page: () => const VerifyPage(),
     ),
-  ];
 
+    // Legals Pages
+    GetPage(
+      name: Routes.legals,
+      page: () => const LegalsPage(),
+    ),
+
+    GetPage(
+      name: Routes.legalDetails,
+      page: () => const LegalDetailPage(),
+    ),
+  ];
 }

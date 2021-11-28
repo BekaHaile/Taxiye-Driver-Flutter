@@ -2,10 +2,14 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:get/get.dart';
+import 'package:taxiye_driver/core/adapters/repository_adapter.dart';
 import 'package:taxiye_driver/core/models/common_models.dart';
 import 'package:taxiye_driver/utils/constants.dart';
 
 class AuthController extends GetxController {
+  final IAuthRepository repository;
+  AuthController({required this.repository});
+
   // phone_input_form info
   Country country = kCountries.first;
   String phoneNumber = '';
