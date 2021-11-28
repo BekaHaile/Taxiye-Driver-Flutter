@@ -41,6 +41,9 @@ dependencies:
   # For network requests
   dio: ^4.0.0
 
+  # Mime library for multipart media types
+  mime: ^1.0.1
+
   # For storing environment variables
   flutter_dotenv: ^5.0.2
 
@@ -62,6 +65,8 @@ dependencies:
 
   # progress hud with null safety support
   modal_progress_hud_nsn: ^0.1.0-nullsafety-1
+  # For hashing values
+  crypto: ^3.0.1
 
   # for showing html elements
   # flutter_html: ^2.1.5

@@ -10,6 +10,10 @@ abstract class Routes {
   static const auth = '/auth';
   static const verify = '/verify';
 
+  // Settings routes
+  static const settings = '/settings';
+  static const privacySettings = '/privacySettings';
+
   // Legals routes
   static const legals = '/legals';
   static const legalDetails = '/legalDetails';

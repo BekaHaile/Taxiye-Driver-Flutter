@@ -45,4 +45,36 @@ final Map<String, String> enUs = {
   'privacy_info': 'See how we use your data',
   'about_us': 'About Us',
   'know_us': 'Know us a little better',
+
+
+  // app settings strings
+  'app_settings': 'App Settings',
+
+  'sound_voice': 'Sound & Voice',
+  'customize_sounds': 'Customize app sounds and more',
+  'navigation': 'Navigation',
+  'google_maps': 'Google Maps',
+
+  'night_mode': 'Night Mode',
+  'night_mode_info': 'Enable or disable night mode',
+  'follow_my_ride': 'Follow My Ride',
+  'follow_my_ride_info': 'Easily share trips with family & friends',
+
+  'language': 'Language',
+  'english': 'English',
+  'customize_privacy': 'Customize what you share with us',
+
+  'privacy_settings_detail':
+  'We respect your personal space. Help us customize your experience by personalizing notifications you receive.',
+
+
+  // privacy settings strings
+  'privacy_settings': 'Privacy Settings',
+  'transaction_updates': 'Transaction Updates',
+  'transaction_updates_info': 'Confirmations, arrival, payment status and more',
+  'rides': 'Rides',
+  'rides_info': 'Exclusive discounts, city specific deals and more',
+  'delivery': 'Delivery',
+  'delivery_info': 'Receive price drop alerts and more',
+
 };
