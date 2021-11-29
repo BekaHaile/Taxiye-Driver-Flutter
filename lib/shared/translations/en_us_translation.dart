@@ -109,4 +109,55 @@ final Map<String, String> enUs = {
 
   'book_now': 'Book Now',
 
+  // setup profile
+  'setup_profile': 'Setup your profile\ninformation',
+  'setup_profile_info':
+  'Please make sure you provide the correct\ninformation.',
+  'full_name': 'Full Name',
+  'email_address': 'Email Address',
+
+  'gender': 'Gender',
+  'male': 'Male',
+  'female': 'Female',
+  'other': 'Other',
+  'crop_image': 'Crop Image',
+
+  'camera': 'Camera',
+  'gallery': 'Gallery',
+
+  // Profile Strings
+  'your_profile': 'Your Profile',
+  'your_info': 'Your Info',
+  'view_edit_your_details': 'View or edit your details',
+  'ride_feedback_from_customers': 'Ride feedback from customers',
+  'your_feedback': 'Your Feedback',
+  'customers_ride_feedback': 'Ride feedback from customers',
+  'emergency_contacts': 'Emergency Contacts',
+  'country': 'Country',
+
+  'profile_picture': 'Profile Picture',
+  'cancel': 'Cancel',
+  'ok': 'Ok',
+
+  'add_new_contact': 'Add new contact',
+  'add_new_place': 'Add new place',
+
+  'ratings': 'Ratings',
+  'rides_completed': 'Rides Completed',
+  'rides_cancelled': 'Rides Cancelled',
+
+  'remove_emergency_contact': 'Remove emergency contact?',
+  'remove_emergency_contact_info':
+  'Are you sure you want to remove this contact from your emergency list?',
+
+  'remove_emergency_contact_success':
+  'Contact has been removed from your emergency contacts',
+  'confirm_contact': 'Confirm contact',
+  'as_emergency_contact': 'as an emergency contact?',
+
+  'add_emergency_contact_success':
+  'Contact has been added as emergency contact',
+  'used': 'Used',
+  'times': 'times',
+
 };

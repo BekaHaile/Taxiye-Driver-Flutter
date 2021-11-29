@@ -7,6 +7,7 @@ import 'package:taxiye_driver/shared/routes/app_pages.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/settings_controller.dart';
 import 'package:taxiye_driver/ui/pages/common/option_tiles.dart';
+import 'package:taxiye_driver/ui/pages/profile/components/edit_profile_bottomsheet.dart';
 import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
 
 class SettingsPage extends GetView<SettingsController> {
@@ -42,7 +43,17 @@ class SettingsPage extends GetView<SettingsController> {
                         onTap: () {
                           switch (option.title) {
                             case 'language':
-                              // TODO: launch language change dialog
+                              Get.bottomSheet(EditProfileBottomSheet(
+                                  title: 'language',
+                                  user: controller.authController.user,
+                                  onValueChange: (changePayload) {
+                                    if (changePayload != null) {
+                                      controller.updateLanguage(changePayload);
+                                    }
+                                    Get.back();
+                                    // controller.profileInfos[index].value = value;
+                                    // Todo: set changed values
+                                  }));
                               break;
                             case 'privacy_settings':
                               Get.toNamed(Routes.privacySettings);

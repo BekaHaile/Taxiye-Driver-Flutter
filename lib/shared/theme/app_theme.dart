@@ -20,6 +20,8 @@ class AppTheme {
   static const Color gradientButtonStartColor = Color(0xFFFFCC00);
   static const Color gradientButtonEndColor = Color(0xFFF8B219);
 
+  static const Color whiteF8 = Color(0xFFF8F8F8);
+
   static const String fontName = 'SegoeUi';
   static ThemeData themeData = ThemeData(
     primaryColor: primaryColor,
@@ -82,6 +84,22 @@ class AppTheme {
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(8.0),
     ),
+  );
+
+  static final bottomSheetDecoration = BoxDecoration(
+    color: Colors.white,
+    borderRadius: const BorderRadius.only(
+      topLeft: Radius.circular(20.0),
+      topRight: Radius.circular(20.0),
+    ),
+    boxShadow: [
+      BoxShadow(
+        color: shadowColor.withOpacity(0.1),
+        spreadRadius: 0,
+        blurRadius: 20,
+        offset: const Offset(1, 0),
+      ),
+    ],
   );
 
   static final boxDecoration = BoxDecoration(

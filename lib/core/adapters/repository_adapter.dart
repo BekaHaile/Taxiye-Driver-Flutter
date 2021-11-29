@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:image_picker/image_picker.dart';
 import 'package:taxiye_driver/core/models/freezed_models.dart';
 
 abstract class IAuthRepository {
@@ -8,6 +9,12 @@ abstract class IAuthRepository {
 
 abstract class ICommonRepository {
   // Todo: Add common request class signitures (interfaces) here.
+}
+
+abstract class IFileRepository {
+  // Todo: Add file/media requests here.
+  Future<File> getMedia(ImageSource imageSource, String mediaType);
+  Future<File?> getCroppedImage(File imageFile);
 }
 
 abstract class IProfileRepository {

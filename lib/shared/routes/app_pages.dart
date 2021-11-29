@@ -1,5 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:taxiye_driver/ui/bindings/init_binding.dart';
+import 'package:taxiye_driver/ui/bindings/profile_binding.dart';
 import 'package:taxiye_driver/ui/pages/auth/auth_page.dart';
 import 'package:taxiye_driver/ui/pages/auth/verify_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/introduction_page.dart';
@@ -7,6 +8,9 @@ import 'package:taxiye_driver/ui/pages/introduction/language_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/splash_page.dart';
 import 'package:taxiye_driver/ui/pages/legals/legal_detail_page.dart';
 import 'package:taxiye_driver/ui/pages/legals/legals_page.dart';
+import 'package:taxiye_driver/ui/pages/profile/emergency_contacts_page.dart';
+import 'package:taxiye_driver/ui/pages/profile/profile_info_page.dart';
+import 'package:taxiye_driver/ui/pages/profile/profile_page.dart';
 import 'package:taxiye_driver/ui/pages/promotion/coupons_page.dart';
 import 'package:taxiye_driver/ui/pages/promotion/exchange_points_page.dart';
 import 'package:taxiye_driver/ui/pages/promotion/promo_detail_page.dart';
@@ -64,6 +68,21 @@ abstract class AppPages {
     GetPage(
       name: Routes.referFreind,
       page: () => const ReferFriendPage(),
+    ),
+
+    // Profile Pages
+    GetPage(
+      name: Routes.profile,
+      page: () => const ProfilePage(),
+      binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: Routes.profileInfo,
+      page: () => const ProfileInfoPage(),
+    ),
+    GetPage(
+      name: Routes.emergencyContacts,
+      page: () => const EmergencyContactsPage(),
     ),
 
     // Settings pages

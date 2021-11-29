@@ -42,6 +42,20 @@ class User with _$User {
 }
 
 @freezed
+abstract class Files with _$Files {
+  factory Files(@JsonKey(name: '_id') String id, String userId, String url,
+      {String? name,
+        String? originalName,
+        String? contentType,
+        int? size,
+        DateTime? createdAt,
+        DateTime? updatedAt}) = _Files;
+
+  factory Files.build({Files? file}) => file ?? Files('', '', '');
+  factory Files.fromJson(Map<String, dynamic> json) => _$FilesFromJson(json);
+}
+
+@freezed
 class Coupon with _$Coupon {
   factory Coupon({
     String? name,

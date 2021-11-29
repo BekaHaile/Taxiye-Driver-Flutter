@@ -10,6 +10,11 @@ abstract class Routes {
   static const auth = '/auth';
   static const verify = '/verify';
 
+  // Profile Routes
+  static const profile = '/profile';
+  static const profileInfo = '/profileInfo';
+  static const emergencyContacts = '/emergencyContacts';
+
   // Promotions Routes
   static const promotions = '/promotions';
   static const exchangePoints = '/exchangePoints';
