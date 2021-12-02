@@ -5,12 +5,14 @@ import 'package:taxiye_driver/core/repository.dart';
 import 'package:taxiye_driver/core/repository/common_repository.dart';
 import 'package:taxiye_driver/core/repository/file_repository.dart';
 import 'package:taxiye_driver/core/repository/profile_repository.dart';
+import 'package:taxiye_driver/core/repository/wallet_repository.dart';
 import 'package:taxiye_driver/core/services/api/api_client.dart';
 import 'package:taxiye_driver/core/services/file_service.dart';
 import 'package:taxiye_driver/ui/controllers/auth_controller.dart';
 import 'package:taxiye_driver/ui/controllers/legals_controller.dart';
 import 'package:taxiye_driver/ui/controllers/promotions_controller.dart';
 import 'package:taxiye_driver/ui/controllers/settings_controller.dart';
+import 'package:taxiye_driver/ui/controllers/wallet_controller.dart';
 
 class InitBinding extends Bindings {
   @override
@@ -35,5 +37,10 @@ class InitBinding extends Bindings {
         fenix: true);
     Get.lazyPut<IFileRepository>(() => FileRepository(fileService: Get.find()),
         fenix: true);
+
+    Get.lazyPut<IWalletRepository>(
+            () => WalletRepository(apiClient: Get.find()),
+        fenix: true);
+    Get.lazyPut(() => WalletController(repository: Get.find()), fenix: true);
   }
 }

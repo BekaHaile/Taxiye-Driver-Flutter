@@ -15,6 +15,11 @@ abstract class Routes {
   static const profileInfo = '/profileInfo';
   static const emergencyContacts = '/emergencyContacts';
 
+  // wallet routes
+  static const wallet = '/wallet';
+  static const walletTransfer = '/walletTransfer';
+  static const walletHistory = '/walletHistory';
+
   // Promotions Routes
   static const promotions = '/promotions';
   static const exchangePoints = '/exchangePoints';

@@ -18,6 +18,7 @@ import 'package:taxiye_driver/ui/pages/promotion/promotions_page.dart';
 import 'package:taxiye_driver/ui/pages/promotion/refer_friend_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/privacy_setting_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/settings_page.dart';
+import 'package:taxiye_driver/ui/pages/wallet/wallet_transfer_page.dart';
 
 part 'app_routes.dart';
 
@@ -46,6 +47,12 @@ abstract class AppPages {
     GetPage(
       name: Routes.verify,
       page: () => const VerifyPage(),
+    ),
+
+    // wallet Pages
+    GetPage(
+      name: Routes.walletTransfer,
+      page: () => const WalletTransferPage(),
     ),
 
     // Promotions pages

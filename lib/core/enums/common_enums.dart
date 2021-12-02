@@ -12,6 +12,11 @@ enum Status {
   error,
 }
 
+enum WalletTransferTo {
+  driver,
+  customer,
+}
+
 enum ExchangePointOption {
   mobileCard,
   transfer,

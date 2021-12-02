@@ -160,4 +160,25 @@ final Map<String, String> enUs = {
   'used': 'Used',
   'times': 'times',
 
+  // Wallet strings
+  'your_wallet': 'Your Wallet',
+  'taxiye_cash': 'Taxiye Cash',
+  'tc_apply': 'T&C apply',
+  'balance': 'Balance',
+
+  'expires': 'Expires',
+  'history': 'History',
+  'transfer': 'Transfer',
+  'recent_transactions': 'Recent Transactions',
+
+  'wallet_history': 'Wallet History',
+  'wallet_transfer': 'Wallet Transfer',
+  'transfer_to': 'Transfer to',
+  'driver': 'Driver',
+
+  'customer': 'Customer',
+  'amount': 'Amount',
+  'reason': 'Reason',
+  'send': 'Send',
+
 };
