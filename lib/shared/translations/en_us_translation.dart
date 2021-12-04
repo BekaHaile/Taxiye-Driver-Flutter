@@ -181,4 +181,14 @@ final Map<String, String> enUs = {
   'reason': 'Reason',
   'send': 'Send',
 
+  // Earnings strings
+  'earnings': 'Earnings',
+  'distance': 'Distance',
+  'time': 'Time',
+  'locations': 'Locations',
+  'pick_up': 'Pick up',
+  'drop_off': 'Drop off',
+  'base_fare': 'Base Fare',
+  'total': 'Total',
+
 };

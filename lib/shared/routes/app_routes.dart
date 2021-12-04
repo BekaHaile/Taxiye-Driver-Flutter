@@ -34,4 +34,7 @@ abstract class Routes {
   // Legals routes
   static const legals = '/legals';
   static const legalDetails = '/legalDetails';
+
+  // Earnings routes
+  static const earnings = '/earnings';
 }

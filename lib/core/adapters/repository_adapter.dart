@@ -37,3 +37,7 @@ abstract class IProfileRepository {
   Future<BasicResponse> removeEmergencyContact(String contactId);
   Future<BasicResponse> addEmergencyContact(Map<String, dynamic> contactPayload);
 }
+
+abstract class IEarningsRepository {
+  // Todo: Earnings implementation goes here
+}

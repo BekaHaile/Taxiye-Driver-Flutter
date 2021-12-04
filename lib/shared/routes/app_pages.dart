@@ -3,6 +3,7 @@ import 'package:taxiye_driver/ui/bindings/init_binding.dart';
 import 'package:taxiye_driver/ui/bindings/profile_binding.dart';
 import 'package:taxiye_driver/ui/pages/auth/auth_page.dart';
 import 'package:taxiye_driver/ui/pages/auth/verify_page.dart';
+import 'package:taxiye_driver/ui/pages/earnings/earnings_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/introduction_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/language_page.dart';
 import 'package:taxiye_driver/ui/pages/introduction/splash_page.dart';
@@ -112,6 +113,12 @@ abstract class AppPages {
     GetPage(
       name: Routes.legalDetails,
       page: () => const LegalDetailPage(),
+    ),
+
+    // Earnings Pages
+    GetPage(
+      name: Routes.earnings,
+      page: () => const EarningsPage(),
     ),
   ];
 }

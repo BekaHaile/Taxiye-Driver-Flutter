@@ -17,6 +17,8 @@ class AppTheme {
   static const Color greyColor2 = Color(0xFFC1C9D2);
   static const Color shadowColor = Color(0xFF123E77);
 
+  static const Color greyColor3 = Color(0xFFEFF2F5);
+
   static const Color gradientButtonStartColor = Color(0xFFFFCC00);
   static const Color gradientButtonEndColor = Color(0xFFF8B219);
 
@@ -57,6 +59,13 @@ class AppTheme {
     color: darkColor,
   );
 
+  static const TextStyle title3 = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 18.0,
+    letterSpacing: 0.27,
+    color: darkColor,
+  );
+
   static const TextStyle subtitle = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 14.0,
@@ -66,6 +75,13 @@ class AppTheme {
 
   static const TextStyle body = TextStyle(
     fontWeight: FontWeight.w400,
+    fontSize: 14.0,
+    letterSpacing: 0.27,
+    color: darkTextColor,
+  );
+
+  static const TextStyle body2 = TextStyle(
+    fontWeight: FontWeight.w600,
     fontSize: 14.0,
     letterSpacing: 0.27,
     color: darkTextColor,

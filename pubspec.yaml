@@ -63,6 +63,8 @@ dependencies:
   # for image cropper
   image_cropper: ^1.4.1
 
+  # For google maps
+  google_maps_flutter: ^2.0.11
   # For svg images
   # flutter_svg: ^0.22.0
   flutter_svg: ^0.23.0+1
