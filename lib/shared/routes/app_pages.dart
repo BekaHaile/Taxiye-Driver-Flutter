@@ -1,6 +1,7 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:taxiye_driver/ui/bindings/init_binding.dart';
 import 'package:taxiye_driver/ui/bindings/profile_binding.dart';
+import 'package:taxiye_driver/ui/bindings/sign_up_binding.dart';
 import 'package:taxiye_driver/ui/pages/auth/auth_page.dart';
 import 'package:taxiye_driver/ui/pages/auth/verify_page.dart';
 import 'package:taxiye_driver/ui/pages/earnings/earnings_page.dart';
@@ -19,6 +20,7 @@ import 'package:taxiye_driver/ui/pages/promotion/promotions_page.dart';
 import 'package:taxiye_driver/ui/pages/promotion/refer_friend_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/privacy_setting_page.dart';
 import 'package:taxiye_driver/ui/pages/settings/settings_page.dart';
+import 'package:taxiye_driver/ui/pages/sign_up/sign_up_page.dart';
 import 'package:taxiye_driver/ui/pages/wallet/wallet_transfer_page.dart';
 
 part 'app_routes.dart';
@@ -48,6 +50,13 @@ abstract class AppPages {
     GetPage(
       name: Routes.verify,
       page: () => const VerifyPage(),
+    ),
+
+    // Sign up Pages
+    GetPage(
+      name: Routes.signUp,
+      page: () => const SignUpPage(),
+      binding: SignUpBinding(),
     ),
 
     // wallet Pages

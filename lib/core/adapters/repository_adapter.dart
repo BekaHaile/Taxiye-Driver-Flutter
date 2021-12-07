@@ -41,3 +41,7 @@ abstract class IProfileRepository {
 abstract class IEarningsRepository {
   // Todo: Earnings implementation goes here
 }
+
+abstract class ISignUpRepository {
+  // Todo: Earnings implementation goes here
+}

@@ -67,7 +67,7 @@ dependencies:
   google_maps_flutter: ^2.0.11
   # For svg images
   # flutter_svg: ^0.22.0
-  flutter_svg: ^0.23.0+1
+  flutter_svg: ^1.0.0
 
   # For getting package info
   # package_info: ^2.0.2
@@ -85,6 +85,9 @@ dependencies:
   # for showing html elements
   # flutter_html: ^2.1.5
   flutter_widget_from_html: ^0.8.1+1
+
+  # for file chooser doted border
+  dotted_border: ^2.0.0+2
 
 dev_dependencies:
   flutter_test:

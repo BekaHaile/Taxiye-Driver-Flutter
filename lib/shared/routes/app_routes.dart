@@ -10,6 +10,9 @@ abstract class Routes {
   static const auth = '/auth';
   static const verify = '/verify';
 
+  // Sign up Routes
+  static const signUp = '/signUp';
+
   // Profile Routes
   static const profile = '/profile';
   static const profileInfo = '/profileInfo';

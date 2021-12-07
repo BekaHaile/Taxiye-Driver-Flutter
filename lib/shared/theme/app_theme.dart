@@ -24,6 +24,8 @@ class AppTheme {
 
   static const Color whiteF8 = Color(0xFFF8F8F8);
 
+  static const Color lightGreen = Color(0xFF31C631);
+
   static const String fontName = 'SegoeUi';
   static ThemeData themeData = ThemeData(
     primaryColor: primaryColor,
@@ -62,6 +64,13 @@ class AppTheme {
   static const TextStyle title3 = TextStyle(
     fontWeight: FontWeight.w600,
     fontSize: 18.0,
+    letterSpacing: 0.27,
+    color: darkColor,
+  );
+
+  static const TextStyle title4 = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 20.0,
     letterSpacing: 0.27,
     color: darkColor,
   );

@@ -34,6 +34,8 @@ final Map<String, String> enUs = {
   // error messages
   'error_phone': 'Please enter phone number',
   'invalid_phone': 'Please enter valid phone number',
+  'error_name': 'Please add full name',
+  'error_email': 'Invalid email address',
 
   'legals': 'Legals',
   'legals_info': 'Important info to read',
@@ -48,7 +50,6 @@ final Map<String, String> enUs = {
 
   // Drawer items
   'promotions': 'Promotions',
-
 
   // app settings strings
   'app_settings': 'App Settings',
@@ -69,7 +70,6 @@ final Map<String, String> enUs = {
 
   'privacy_settings_detail':
   'We respect your personal space. Help us customize your experience by personalizing notifications you receive.',
-
 
   // privacy settings strings
   'privacy_settings': 'Privacy Settings',
@@ -115,6 +115,14 @@ final Map<String, String> enUs = {
   'Please make sure you provide the correct\ninformation.',
   'full_name': 'Full Name',
   'email_address': 'Email Address',
+  'step': 'Step',
+  'personal_information': 'Personal Information',
+  'vehicle_information': 'Vehicle Information',
+  'vehicle_picture': 'Vehicle Picture',
+  'drivers_license': 'Driver\'s License',
+  'logbook_certificate': 'Logbook (Certificate of ownership)',
+  'others': 'Others',
+  'submit': 'Submit',
 
   'gender': 'Gender',
   'male': 'Male',
@@ -124,6 +132,31 @@ final Map<String, String> enUs = {
 
   'camera': 'Camera',
   'gallery': 'Gallery',
+
+  'make': 'Make',
+  'model': 'Model',
+  'year': 'Year',
+  'license_number': 'License Number',
+
+  're_upload': 'Re-upload',
+  'delete': 'Delete',
+  'front_view': 'Front View',
+  'side_view': 'Side View',
+  'mandatory': 'Mandatory *',
+  'optional': 'Optional',
+  'upload_a_file_or_take_a_photo': 'Upload a file or take a photo',
+  'supported_formats_for_upload': 'Supported formats: jpg, png, pdf',
+  'maximum_size': 'Maximum size: 3 MB',
+  'upload_the_page_with_your_name_and_photo':
+    'Upload the page with your name and photo.',
+  'trade_license_insurance':
+    'Example: Trade License, Insurance (Min. 3rd party)',
+  'upload_vehicle_picture_from_the_front_and_side_view':
+      'Upload Vehicle picture from the front & side view. Make sure the license plate is visible on the front view picture',
+  'upload_image_of_your_renewed_driver_license':
+      'Upload Image of your renewed driver\'s license',
+  'documents_uploaded_successfully': 'Documents uploaded successfully',
+  'done': 'Done',
 
   // Profile Strings
   'your_profile': 'Your Profile',

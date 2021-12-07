@@ -31,7 +31,6 @@ class ImagePickerBottomsheet extends StatelessWidget {
             ProfilePickerTile(
               imageSource: ImageSource.camera,
               onTap: () {
-                Get.back();
                 onPickFromCallback(ImageSource.camera);
               },
             ),
