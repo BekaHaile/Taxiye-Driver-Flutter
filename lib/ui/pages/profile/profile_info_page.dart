@@ -5,9 +5,9 @@ import 'package:taxiye_driver/core/enums/common_enums.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/profile_controller.dart';
 import 'package:taxiye_driver/ui/pages/profile/components/edit_profile_bottomsheet.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/ui/widgets/image_picker_bottomsheet.dart';
 import 'package:taxiye_driver/ui/widgets/profile_avatar.dart';
-import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
 import 'package:taxiye_driver/utils/constants.dart';
 
 class ProfileInfoPage extends GetView<ProfileController> {
@@ -18,7 +18,7 @@ class ProfileInfoPage extends GetView<ProfileController> {
     return Stack(
       children: [
         Scaffold(
-          appBar: const WhiteAppBar(),
+          appBar: BackAppBar(title: 'your_info'.tr),
           body: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Padding(
@@ -26,10 +26,6 @@ class ProfileInfoPage extends GetView<ProfileController> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'your_info'.tr,
-                    style: AppTheme.body.copyWith(fontSize: 24.0),
-                  ),
                   const SizedBox(height: 30.0),
                   Container(
                     height: 80,

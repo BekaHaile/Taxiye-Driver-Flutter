@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:taxiye_driver/core/models/common_models.dart';
 import 'package:taxiye_driver/shared/routes/app_pages.dart';
-import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/legals_controller.dart';
 import 'package:taxiye_driver/ui/pages/common/option_tiles.dart';
-import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 
 class LegalsPage extends GetView<LegalsController> {
   const LegalsPage({Key? key}) : super(key: key);
@@ -13,19 +12,12 @@ class LegalsPage extends GetView<LegalsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const WhiteAppBar(),
+      appBar: BackAppBar(title: 'legals'.tr),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'legals'.tr,
-              style: AppTheme.body.copyWith(
-                fontSize: 24.0,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
             const SizedBox(height: 20.0),
             ListView.builder(
               shrinkWrap: true,

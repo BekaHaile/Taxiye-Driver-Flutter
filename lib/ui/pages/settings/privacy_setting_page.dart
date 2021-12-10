@@ -5,7 +5,7 @@ import 'package:taxiye_driver/core/models/common_models.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/settings_controller.dart';
 import 'package:taxiye_driver/ui/pages/common/option_tiles.dart';
-import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/utils/constants.dart';
 
 class PrivacySettingsPage extends GetView<SettingsController> {
@@ -14,17 +14,13 @@ class PrivacySettingsPage extends GetView<SettingsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const WhiteAppBar(),
+      appBar: BackAppBar(title: 'privacy_settings'.tr),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(horizontal: kPagePadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'privacy_settings'.tr,
-              style: AppTheme.body.copyWith(fontSize: 24.0),
-            ),
             const SizedBox(height: 20.0),
             Text(
               'privacy_settings_detail'.tr,

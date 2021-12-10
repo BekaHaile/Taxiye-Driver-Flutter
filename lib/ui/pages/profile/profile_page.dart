@@ -7,8 +7,8 @@ import 'package:taxiye_driver/shared/routes/app_pages.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/profile_controller.dart';
 import 'package:taxiye_driver/ui/pages/common/option_tiles.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/ui/widgets/profile_avatar.dart';
-import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
 import 'package:taxiye_driver/utils/constants.dart';
 
 class ProfilePage extends GetView<ProfileController> {
@@ -19,7 +19,7 @@ class ProfilePage extends GetView<ProfileController> {
     return Stack(
       children: [
         Scaffold(
-          appBar: const WhiteAppBar(),
+          appBar: BackAppBar(title: 'your_profile'.tr),
           body: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Padding(
@@ -27,10 +27,6 @@ class ProfilePage extends GetView<ProfileController> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    'your_profile'.tr,
-                    style: AppTheme.body.copyWith(fontSize: 24.0),
-                  ),
                   const SizedBox(height: 30.0),
                   Obx(
                         () => Column(

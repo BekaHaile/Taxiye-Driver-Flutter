@@ -215,6 +215,7 @@ final Map<String, String> enUs = {
   'send': 'Send',
 
   // Earnings strings
+  'earning_details': 'Earning Details',
   'earnings': 'Earnings',
   'distance': 'Distance',
   'time': 'Time',

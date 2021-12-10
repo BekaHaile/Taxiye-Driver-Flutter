@@ -7,6 +7,7 @@ import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:taxiye_driver/core/enums/common_enums.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/wallet_controller.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/ui/widgets/phone_input.dart';
 import 'package:taxiye_driver/ui/widgets/rounded_gradient_button.dart';
 import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
@@ -21,7 +22,7 @@ class WalletTransferPage extends GetView<WalletController> {
     return Stack(
       children: [
         Scaffold(
-          appBar: const WhiteAppBar(),
+          appBar: BackAppBar(title: 'wallet_transfer'.tr),
           body: Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 0.0, 20.0, 20.0),
             child: Form(
@@ -35,10 +36,6 @@ class WalletTransferPage extends GetView<WalletController> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              'wallet_transfer'.tr,
-                              style: AppTheme.body.copyWith(fontSize: 24.0),
-                            ),
                             const SizedBox(height: 30.0),
                             Text(
                               'transfer_to'.tr.toUpperCase(),

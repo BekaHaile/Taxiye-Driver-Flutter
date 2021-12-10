@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/earnings_controller.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/ui/widgets/even_card.dart';
 import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
 import 'package:taxiye_driver/utils/constants.dart';
@@ -14,13 +15,14 @@ class EarningsPage extends GetView<EarningsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const WhiteAppBar(),
+      appBar: BackAppBar(title: 'earning_details'.tr),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
           child: Column(
             children: [
+              const SizedBox(height: 20.0),
               Container(
                 height: 170.0,
                 decoration: BoxDecoration(

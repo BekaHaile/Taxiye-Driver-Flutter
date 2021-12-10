@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:taxiye_driver/shared/theme/app_theme.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 import 'package:taxiye_driver/ui/widgets/rounded_gradient_button.dart';
 import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
 import 'package:taxiye_driver/utils/constants.dart';
@@ -13,7 +14,7 @@ class ReferFriendPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const WhiteAppBar(),
+      appBar: BackAppBar(title: 'refer_friend'.tr),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(
             kPagePadding, 0.0, kPagePadding, kPagePadding),
@@ -21,10 +22,6 @@ class ReferFriendPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              'refer_friend'.tr,
-              style: AppTheme.body.copyWith(fontSize: 24.0),
-            ),
             contentSpacing,
             Column(
               children: [

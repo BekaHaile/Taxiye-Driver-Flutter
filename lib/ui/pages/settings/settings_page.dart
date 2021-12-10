@@ -8,7 +8,7 @@ import 'package:taxiye_driver/shared/theme/app_theme.dart';
 import 'package:taxiye_driver/ui/controllers/settings_controller.dart';
 import 'package:taxiye_driver/ui/pages/common/option_tiles.dart';
 import 'package:taxiye_driver/ui/pages/profile/components/edit_profile_bottomsheet.dart';
-import 'package:taxiye_driver/ui/widgets/white_appbar.dart';
+import 'package:taxiye_driver/ui/widgets/back_appbar.dart';
 
 class SettingsPage extends GetView<SettingsController> {
   const SettingsPage({Key? key}) : super(key: key);
@@ -18,19 +18,12 @@ class SettingsPage extends GetView<SettingsController> {
     return Stack(
       children: [
         Scaffold(
-          appBar: const WhiteAppBar(),
+          appBar: BackAppBar(title: 'app_settings'.tr),
           body: Padding(
             padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'app_settings'.tr,
-                  style: AppTheme.body.copyWith(
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
                 const SizedBox(height: 20.0),
                 Obx(
                       () => ListView.builder(
