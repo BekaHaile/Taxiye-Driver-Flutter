@@ -124,7 +124,7 @@ class ApiClient {
     } on DioError catch (e) {
       final errorMessage = NetworkExceptions.getErrorMessage(
           NetworkExceptions.getDioException(e));
-      print(errorMessage);
+      // print(errorMessage);
       toast('error', e.response?.data['message']);
       return Future.error(errorMessage);
     }

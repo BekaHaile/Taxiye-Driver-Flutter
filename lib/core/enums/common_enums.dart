@@ -94,7 +94,7 @@ extension SuccessFlagsExtension on SuccessFlags {
           .firstWhere((element) => element.value == successCode)
           .key;
     } catch (error) {
-      print('successFlag error: $error');
+      // print('successFlag error: $error');
       return SuccessFlags.dummy;
     }
   }

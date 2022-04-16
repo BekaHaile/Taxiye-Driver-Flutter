@@ -56,7 +56,7 @@ class LegalsController extends GetxController {
         }
       },
       onError: (err) {
-        print("$err");
+        // print("$err");
         status(Status.error);
       },
     );

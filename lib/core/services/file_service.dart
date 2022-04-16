@@ -17,8 +17,8 @@ class FileService {
   Future<File> getMedia(ImageSource imagesource, String mediaType) async {
     try {
       final pickedFile = await (mediaType == 'image'
-          ? picker.getImage(source: imagesource)
-          : picker.getVideo(source: imagesource));
+          ? picker.pickImage(source: imagesource)
+          : picker.pickImage(source: imagesource));
       if (pickedFile != null) {
         return File(pickedFile.path);
       } else {
@@ -32,7 +32,8 @@ class FileService {
 
   Future<File?> getCropeImage(File imageFile) async {
     try {
-      return await ImageCropper.cropImage(
+      ImageCropper imageCropper = ImageCropper();
+      return await imageCropper.cropImage(
           sourcePath: imageFile.path,
           aspectRatioPresets: [
             CropAspectRatioPreset.square,
